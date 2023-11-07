@@ -129,7 +129,7 @@ export default function Form() {
               })}
             />
           </div>
-          <div className="mt-2 text-red-600 font-[500] text-sm">
+          <div className="mt-2 text-red-500 font-[500] text-sm">
             {errors.email ? (
               <p>
                 Correo electrónico no válido
@@ -137,7 +137,7 @@ export default function Form() {
             ) : null}
           </div>
         </div>
-        {/* {found ? (
+        {found ? (
           loadInput ? (
             <div className="w-full flex justify-center mt-5 mb-5">
               <svg
@@ -175,8 +175,8 @@ export default function Form() {
                 />
 
                 <div className="absolute mr-3 cursor-pointer" onClick={() => setShow(!show)}>
-                  <Image
-                    src={show ? "/form/eye-empty.svg" : "/form/eye-off.svg"}
+                  <img
+                    src={show ? EyeEmpty : EyeOff}
                     width="25"
                     height="25"
                     alt=""
@@ -184,7 +184,7 @@ export default function Form() {
                 </div>
 
               </div>
-              <div className="mt-2 required">
+              <div className="mt-2 text-red-500 tex-sm font-[500]">
                 {errors.password ? (
                   <p>
                     Campo requerido
@@ -198,43 +198,9 @@ export default function Form() {
               </div>
             </div>
           )
-        ) : null} */}
+        ) : null}
 
-        <>
-          {found ? <div className="w-full mb-4">
-            <label className="font-medium">
-              Contraseña <span className="mark">*</span>
-            </label>
-            <div className="w-full flex justify-end items-center relative mt-2">
-              <input
-                type={show ? "text" : "password"}
-                className="border border-[#dbdbdb] rounded-[8px] w-full py-2 px-3 ourFocus"
-                {...register("password", { required: true })}
-              />
 
-              <div className="absolute mr-3 cursor-pointer" onClick={() => setShow(!show)}>
-                <img
-                  src={show ? EyeEmpty : EyeOff}
-                  width="25"
-                  height="25"
-                  alt=""
-                />
-              </div>
-
-            </div>
-            <div className="mt-2 text-red-600 font-[500] text-sm">
-              {errors.password ? (
-                <p>
-                  Campo requerido
-                </p>
-              ) : null}
-              {errors.root ? (
-                <p>
-                  Credenciales incorrectas
-                </p>
-              ) : null}
-            </div>
-          </div> : null}</>
 
         <button
           type="submit"

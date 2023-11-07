@@ -7,6 +7,7 @@ import x from "../assets/social/x.avif";
 import youtube from "../assets/social/youtube.avif";
 import { Image } from "astro:assets";
 import Form from "./components/react/main/login/form.jsx";
+import Counter from "./components/solid/counter";
 ---
 
 <html lang="en">
@@ -57,6 +58,7 @@ import Form from "./components/react/main/login/form.jsx";
 					}
 				</div>
 				<Form client:load />
+				<Counter client:load />
 			</div>
 			<div
 				class="xl:w-[30%] lg:w-[53%] md:w-[70%] sm:w-[82%] max-[425px]:w-[85%] mt-6 flex justify-center space-x-7 items-center"
