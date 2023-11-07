@@ -1,6 +1,5 @@
-"use server";
 
-import { cookies } from "next/headers";
+/* import { cookies } from "next/headers";
 import { Cookie } from "./struct";
 
 export async function getServerCookie(name: string): Promise<Cookie> {
@@ -8,3 +7,4 @@ export async function getServerCookie(name: string): Promise<Cookie> {
 	const cookie = cookieStore.get(name) as Cookie;
 	return cookie;
 }
+ */

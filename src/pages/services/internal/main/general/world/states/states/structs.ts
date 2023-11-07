@@ -1,6 +1,6 @@
-import { Result } from "../service/structs";
+import type { Result } from "../service/structs";
 
-export interface StatesStore{
+export interface StatesStore {
     stateList: Array<Result>,
     setStates: (statesList: Array<Result>) => void;
     getStates: (country_id: number) => void;

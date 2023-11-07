@@ -1,7 +1,7 @@
 import Cookies from "js-cookie";
 import { create } from "zustand";
-import { Timezones } from "../service/handles";
-import { TimezoneStore } from "./structs";
+/* import { Timezones } from "../service/handles";
+import type { TimezoneStore } from "./structs";
 
 export const useTimezone = create<TimezoneStore>((set) => ({
 	timezoneList: [],
@@ -10,7 +10,7 @@ export const useTimezone = create<TimezoneStore>((set) => ({
 		const token = Cookies.get("AuthRegisterToken")
 			? Cookies.get("AuthRegisterToken")
 			: Cookies.get("AuthLoginToken");
-            
+		    
 		if (token) {
 			const res = await Timezones(country_id, token);
 			const { status, result } = res;
@@ -23,3 +23,4 @@ export const useTimezone = create<TimezoneStore>((set) => ({
 	},
 	clearTimezones: () => set({ timezoneList: [] }),
 }));
+ */

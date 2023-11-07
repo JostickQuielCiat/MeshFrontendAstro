@@ -1,5 +1,3 @@
-"use server";
-
 import type { SingleValue } from "react-select";
 import type { Option } from "../../../general/world/orgs/service/structs";
 

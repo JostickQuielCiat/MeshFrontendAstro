@@ -1,6 +1,6 @@
 import Cookies from "js-cookie";
 import { create } from "zustand";
-import { Countries } from "../service/handles";
+/* import { Countries } from "../service/handles";
 import { CountriesStore } from "./structs";
 
 export const useCountries = create<CountriesStore>((set) => ({
@@ -10,7 +10,7 @@ export const useCountries = create<CountriesStore>((set) => ({
 		const token = Cookies.get("AuthRegisterToken")
 			? Cookies.get("AuthRegisterToken")
 			: Cookies.get("AuthLoginToken");
-            
+		    
 		if (token) {
 			const res = await Countries(token);
 			const { status, result } = res;
@@ -23,3 +23,4 @@ export const useCountries = create<CountriesStore>((set) => ({
 	},
 	clearCountries: () => set({ countriesList: [] }),
 }));
+ */

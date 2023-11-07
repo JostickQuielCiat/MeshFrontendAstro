@@ -1,16 +1,16 @@
 import Cookies from "js-cookie";
 import { create } from "zustand";
-import { States } from "../service/handle";
-import { StatesStore } from "./structs";
+/* import { States } from "../service/handle";
+import { StatesStore } from "./structs"; */
 
-export const useStates = create<StatesStore>((set) => ({
+/* export const useStates = create<StatesStore>((set) => ({
 	stateList: [],
 	setStates: (stateList) => set({ stateList }),
 	getStates: async (country_id) => {
 		const token = Cookies.get("AuthRegisterToken")
 			? Cookies.get("AuthRegisterToken")
 			: Cookies.get("AuthLoginToken");
-            
+		    
 		if (token) {
 			const res = await States(country_id, token);
 			const { status, result } = res;
@@ -24,3 +24,4 @@ export const useStates = create<StatesStore>((set) => ({
 	},
 	clearStates: () => set({ stateList: [] }),
 }));
+ */

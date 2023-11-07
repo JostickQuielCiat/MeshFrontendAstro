@@ -1,11 +1,11 @@
-import { getServerCookie } from "../../../../utils/cookies/imp";
+/* import { getServerCookie } from "../../../../utils/cookies/imp";
 import { ReadDictionarie } from "../service/handles";
 
 export async function getText(section: string, key: string, text: string) {
 	const cookie = await getServerCookie("language");
 	const lang = cookie?.value;
 	
-    if (lang !== "es") {
+	if (lang !== "es") {
 		const res = await ReadDictionarie(lang, ["login"], "");
 		const { result } = res;
 
@@ -17,4 +17,4 @@ export async function getText(section: string, key: string, text: string) {
 	}
 
 	return text;
-}
+} */
