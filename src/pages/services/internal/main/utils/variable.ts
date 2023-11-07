@@ -1,0 +1,11 @@
+export const api =  import.meta.env.BACKEND_URL as string;
+export const jwtLogin =  import.meta.env.JWT_LOGIN as string;
+/* export const jwtPassword =  import.meta.env.JWT_PASSWORD as string;
+export const jwtRegister =  import.meta.env.JWT_REGISTER as string;
+export const jwtInvite =  import.meta.env.JWT_INVITE as string;
+export const jwtVerified =  import.meta.env.JWT_VERIFIED as string;
+export const jwtCode =  import.meta.env.JWT_CODE as string;
+export const jwtAuthorization =  import.meta.env.JWT_AUTHORIZATION as string;
+export const frontend_url =  import.meta.env.FRONTEND_URL as string;
+export const recaptcha_site_key =  import.meta.env.RECAPTCHA_SITE_KEY as string;
+export const recaptcha_secret_key =  import.meta.env.RECAPTCHA_SECRET_KEY as string; */

@@ -1,0 +1,144 @@
+---
+import Logo from "../assets/logo.avif";
+import ciat from "../assets/social/ciat.avif";
+import facebook from "../assets/social/facebook.avif";
+import Lkdn from "../assets/social/linkedin.avif";
+import x from "../assets/social/x.avif";
+import youtube from "../assets/social/youtube.avif";
+import { Image } from "astro:assets";
+import Form from "./components/main/login/form.jsx";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<div
+			class="w-full h-screen flex flex-col justify-center relative max-sm:p-4 items-center bg-[#F8F8F8]"
+		>
+			<div class="w-[8rem] h-[50px] mb-6 absolute top-10 right-10">
+				<!-- <LanguageSelector /> -->
+			</div>
+
+			<div class="flex justify-center mb-[3%]">
+				<div class="">
+					<Image src={Logo} alt="logo" width={250} height={250} />
+				</div>
+			</div>
+
+			<div
+				class="bg-white xl:w-[30%] md:px-[3%] md:py-[2%] max-[425px]:px-[5%] max-[425px]:py-[5%] rounded-[8px] border border-[#E1E1E1]"
+			>
+				<div class="w-full mb-6">
+					<h1
+						class="mb-1 text-3xl font-semibold max-[375px]:text-3xl"
+					>
+						<!-- <Dictionaries
+							section="login"
+							section_key="form_title"
+							text="Inicia sesión"
+						/> -->
+
+						 Inicia sesión
+					</h1>
+					{
+						/* <p class="text-[#8C8C8C] max-[375px]:text-[14px]">
+						<Dictionaries
+							section="login"
+							section_key="form_subtitle"
+							text="Inicia sesión para acceder a características exclusivas y más."
+						/>
+					</p> */
+					}
+				</div>
+				<Form client:load />
+			</div>
+			<div
+				class="xl:w-[30%] lg:w-[53%] md:w-[70%] sm:w-[82%] max-[425px]:w-[85%] mt-6 flex justify-center space-x-7 items-center"
+			>
+				<div class="max-sm:w-[17%] w-[8%]">
+					<a href="https://www.youtube.com/@ciatorg" target="blank">
+						<Image
+							src={youtube}
+							alt="Picture of the author"
+							class="w-full"
+						/>
+					</a>
+				</div>
+				<div class="max-sm:w-[17%] w-[8%]">
+					<a href="http://www.facebook.com/ciatorg" target="blank">
+						<Image
+							src={facebook}
+							alt="Picture of the author"
+							class="w-full"
+						/>
+					</a>
+				</div>
+
+				<div class="max-sm:w-[17%] w-[14%]">
+					<a href="https://twitter.com/ciatorg" target="blank">
+						<Image
+							src={x}
+							alt="Picture of the author"
+							class="w-full"
+						/>
+					</a>
+				</div>
+
+				<div class="max-sm:w-[17%] w-[8%]">
+					<a
+						href="https://www.linkedin.com/company/centro-interamericano-de-administraciones-tributarias---ciat/"
+						target="blank"
+					>
+						<Image
+							src={Lkdn}
+							alt="Picture of the author"
+							class="w-full"
+						/>
+					</a>
+				</div>
+
+				<div class="max-sm:w-[17%] w-[8%]">
+					<a href="https://www.ciat.org" target="blank">
+						<Image
+							src={ciat}
+							alt="Picture of the author"
+							class="w-full"
+						/>
+					</a>
+				</div>
+			</div>
+			{
+				/* <div className="md:w-[80%] md:space-x-8 max-[425px]:w-[100%] absolute bottom-0 mb-8 flex justify-center min-md:space-x-4 max-[425px]:space-x-8 max-[375px]:space-x-4 max-[320px]:space-x-4 max-[320px]:text-xs max-[375px]:text-sm text-[#8C8C8C]">
+				<Link href="#">
+					<Dictionaries
+						section="login"
+						section_key="terms"
+						text="Términos & Condiciones"
+					/>
+				</Link>
+				<Link href="#">
+					<Dictionaries
+						section="login"
+						section_key="privacy"
+						text="Políticas de privacidad"
+					/>
+				</Link>
+			</div> */
+			}
+		</div>
+	</body>
+</html>
+
+<style is:global>
+	@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+	* {
+		font-family: "Noto Sans";
+	}
+</style>
