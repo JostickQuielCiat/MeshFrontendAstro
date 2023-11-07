@@ -1,5 +1,5 @@
-import { getDictionarieTextV2 } from "../../../services/internal/main/general/world/dictionaries/dictionarie/imp";
-import type { Read } from "../../../services/internal/main/general/world/dictionaries/service/structs";
+import { getDictionarieTextV2 } from "../../../../services/internal/main/general/world/dictionaries/dictionarie/imp";
+import type { Read } from "../../../../services/internal/main/general/world/dictionaries/service/structs";
 import toast from "react-hot-toast";
 
 export function notifications(status: string, message: string, dictionaries: Read) {

@@ -1,17 +1,17 @@
-import { useDictionaries } from "../../../services/internal/main/general/world/dictionaries/states/imp";
+import { useDictionaries } from "../../../../services/internal/main/general/world/dictionaries/states/imp";
 import {
   Email,
   Login,
-} from "../../../services/internal/main/login/service/handles.ts";
-import { useShowPassword } from "../../../services/internal/main/register/states/imp";
+} from "../../../../services/internal/main/login/service/handles.ts";
+import { useShowPassword } from "../../../../services/internal/main/register/states/imp";
 import Cookies from "js-cookie";
 import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { Toaster } from "react-hot-toast";
 import { notifications } from "./notification";
 import type { PayloadLogin } from "./structs";
-import EyeEmpty from "../../../../assets/form/eye-empty.svg?url";
-import EyeOff from "../../../../assets/form/eye-empty.svg?url";
+import EyeEmpty from "../../../../../assets/form/eye-empty.svg?url";
+import EyeOff from "../../../../../assets/form/eye-empty.svg?url";
 
 export default function Form() {
   const {
@@ -129,7 +129,7 @@ export default function Form() {
               })}
             />
           </div>
-          <div className="mt-2 text-red-600 font-[500]">
+          <div className="mt-2 text-red-600 font-[500] text-sm">
             {errors.email ? (
               <p>
                 Correo electrónico no válido
@@ -222,7 +222,7 @@ export default function Form() {
               </div>
 
             </div>
-            <div className="mt-2 text-red-600 font-[500]">
+            <div className="mt-2 text-red-600 font-[500] text-sm">
               {errors.password ? (
                 <p>
                   Campo requerido
